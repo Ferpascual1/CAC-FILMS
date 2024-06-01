@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAC - Movies</title>
+    <link rel="stylesheet" href="style3.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="icon" href="./IMG/iconfilm.png">
+</head>
+<body>
+    <header>
+        <div class="div1">
+            <a href="#"><img src="./IMG/iconfilm.png" alt="iconfilm" height="30px" class="iconfilm"><span>CAC-Movies</span></a>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="#tendencias">Tendencias</a></li>
+                    <li><a href="./login.html">Registrarse</a></li>
+                    <li><a href="./login.html" class="inicsesion">Iniciar sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main">
+        <article>
+            <div id="primerdiv">
+                <h1>Películas y series ilimitadas</h1> 
+                <h1>en un solo lugar</h1>
+                <h2>Disfruta donde quiéras.</h2>
+                <h2>Cancela en cualquier momento.</h2>
+                <button type="submit"><a href="./login.html">Registrate</a></button>
+            </div>
+        </article>
+        <section id="sectionuno">
+            <div class="segundodiv">
+                <h1>Que estas buscando para ver?</h1>
+            </div>
+            <div class="tercerdiv">
+                <input type="search" placeholder="Buscar..." id="buscar"><a href="#tendencias"><span><button class="b" type="submit">Buscar</button></span></a>
+            </div>
+        </section>
+        <section>
+            <div id="tendencias" class="sectionpeliculas">
+                <div class="peliculasparte1">
+                    <div>
+                        <h1>Las tendencias de hoy</h1>
+                    </div>
+                     <!--    <div id="contenedor" class="contenedor"></div>
+                        <div class="botonesfinales">
+                            <button class="botonant"><a href="">Anterior</a></button>
+                            <button  class="botonsig"><a href="">Siguiente</a></button>
+                        </div>  -->
+                    <div class="contenedor" id="contenedor"></div>
+
+                    <div class="paginacion">
+                        <button id="btnAnterior">Anterior</button>
+                        <button id="btnSiguiente">Siguiente</button>
+                    </div>
+                
+                    <!-- <div id="peliculas">
+                        <div class="divpelis">    
+                            <img class="imgTendencia" src="https://image.tmdb.org/t/p/w500//lli31lYTFpvxVBeFHWoe5PMfW5s.jpg" alt="Split" loading="lazy">
+                            <div class="titulopelicula">
+                                <h4>Godzilla</h4>
+                            </div>
+                        </div>
+                        <div class="divpelis">
+                            <img class="imgTendencia" src="https://image.tmdb.org/t/p/w500//5qcHcoJL3otMwJPKnbV5M3a1jQd.jpg" alt="How to Date Billy Walsh" loading="lazy">
+                            <div class="titulopelicula">
+                                <h4>After Pandemic</h4>
+                            </div>
+                        </div>
+                        <div class="divpelis">
+                            <img class="imgTendencia" src="https://image.tmdb.org/t/p/w500//zokD6uxR2iWfYM3Y84yGJvnNTK7.jpg" alt="Godzilla" loading="lazy">
+                            <div class="titulopelicula">
+                                <h4>Alienoid</h4>
+                            </div>
+                        </div>
+                        <div class="divpelis">
+                            <img class="imgTendencia" src="https://image.tmdb.org/t/p/w500//e843ZAdn3f5R7SFTRIqoV7Ttk91.jpg" alt="Not Love, Just Frenzy" loading="lazy">
+                            <div class="titulopelicula">
+                                <h4>Creation</h4>
+                            </div>
+                        </div>
+                        <div class="divpelis">  
+                            <img class="imgTendencia" src="https://image.tmdb.org/t/p/w500//uXDfjJbdP4ijW5hWSBrPrlKpxab.jpg" alt="Toy Story" loading="lazy">
+                            <div class="titulopelicula">
+                                <h4>Damseel</h4>
+                            </div>
+                        </div> 
+                        <div class="divpelis">
+                            <img class="imgTendencia" src="https://image.tmdb.org/t/p/w500//pD6sL4vntUOXHmuvJPPZAgvyfd9.jpg" alt="Leo" loading="lazy">
+                            <div class="titulopelicula">
+                                <h4>Dune</h4>
+                            </div>
+                        </div>
+                        <div class="divpelis">
+                            <img class="imgTendencia" src="https://image.tmdb.org/t/p/w500//or06FN3Dka5tukK1e9sl16pB3iy.jpg" alt="Avengers: Endgame" loading="lazy">
+                            <div class="titulopelicula">
+                                <h4>Dune II</h4>
+                            </div>
+                        </div>
+                        <div class="divpelis">
+                            <img src="./IMG/films/firstomen.jpg" alt="Firstomen" height="350px" class="col peli">
+                            <div class="titulopelicula">
+                                <h4>Firstomen</h4>
+                            </div>
+                        </div>
+                        <div class="divpelis">
+                            <img src="./IMG/films/godminuz.jpg" alt="minus" height="350px" class="col peli">
+                            <div class="titulopelicula">
+                                <h4>Godzilla minus Z</h4>
+                            </div>
+                        </div>
+                        <div class="divpelis">
+                            <img src="./IMG/films/wagesfear.jpg" alt="Wages" height="350px" class="col peli">
+                            <div class="titulopelicula">
+                                <h4>Wages fear</h4>
+                            </div>
+                        </div>
+                        <div class="divpelis">
+                            <img src="./IMG/films/godzvskong2.jpg" alt="Godzilla" height="350px" class="col peli">
+                            <div class="titulopelicula">
+                                <h4>Godzilla vs Kong II</h4>
+                            </div>
+                        </div>
+                        <div class="divpelis">
+                            <img src="./IMG/films/hearthunter.jpg" alt="Hearthunter" height="350px" class="col peli">
+                            <div class="titulopelicula">
+                                <h4>Hearthunter</h4>
+                            </div>
+                        </div>
+                        <div class="divpelis">
+                            <img src="./IMG/films/hunter.jpg" alt="Hunter" height="350px" class="col peli">
+                            <div class="titulopelicula">
+                                <h4>Hunter</h4>
+                            </div>
+                        </div>
+                        <div class="divpelis">
+                            <img src="./IMG/films/imaginary.jpg" alt="Imaginary" height="350px" class="col peli">
+                            <div class="titulopelicula">
+                                <h4>Imaginary</h4>
+                            </div>
+                        </div>
+                        <div class="divpelis">
+                            <img src="./IMG/films/madameweb.jpg" alt="Madameweb" height="350px" class="col peli">
+                            <div class="titulopelicula">
+                                <h4>Madameweb</h4>
+                            </div>
+                        </div>
+                        <div class="divpelis">
+                            <img src="./IMG/films/migration.jpg" alt="Migration" height="350px" class="col peli">
+                            <div class="titulopelicula">
+                                <h4>Migration</h4>
+                            </div>
+                        </div>
+                        <div class="divpelis">
+                            <img src="./IMG/films/nowayup.jpg" alt="nowayup" height="350px" class="col peli">
+                            <div class="titulopelicula">
+                                <h4>No way up</h4>
+                            </div>
+                        </div>
+                        <div class="divpelis">
+                            <img src="./IMG/films/panda.jpg" alt="Panda" height="350px" class="col peli">
+                            <div class="titulopelicula">
+                                <h4>Panda</h4>
+                            </div>
+                        </div>
+                        <div class="divpelis">
+                            <img src="./IMG/films/roadhouse.jpg" alt="Roadhouse" height="350px" class="col peli">
+                            <div class="titulopelicula">
+                                <h4>Roadhouse</h4>
+                            </div>
+                        </div>
+                        <div class="divpelis">
+                            <img src="./IMG/films/afterpandemic.jpg" alt="after" height="350px" class="col peli">
+                            <div class="titulopelicula">
+                                <h4>After pandemic</h4>
+                            </div>
+                        </div>
+                    </div>-->
+                
+                
+                    
+                </div>    
+                <div class="aclamadas" >
+                    <div>
+                        <h1>Las más aclamadas</h1>
+                    </div>
+                    <div class="pelisaclamadas">
+                        <img src="./IMG/films/afterpandemic.jpg" alt="godzilla" height="350px">
+                        <img src="./IMG/films/alienoid+.jpg" alt="godzilla" height="350px">
+                        <img src="./IMG/films/creationgods.jpg" alt="godzilla" height="350px">
+                        <img src="./IMG/films/damseel.jpg" alt="godzilla" height="350px">
+                        <img src="./IMG/films/dune.jpg" alt="godzilla" height="350px">
+                        <img src="./IMG/films/dunetwo.jpg" alt="godzilla" height="350px">
+                        <img src="./IMG/films/firstomen.jpg" alt="godzilla" height="350px">
+                        <img src="./IMG/films/godminuz.jpg" alt="godzilla" height="350px">
+                        <img src="./IMG/films/damseel.jpg" alt="godzilla" height="350px">
+                        <img src="./IMG/films/dune.jpg" alt="godzilla" height="350px">
+                        <img src="./IMG/films/dunetwo.jpg" alt="godzilla" height="350px">
+                        <img src="./IMG/films/firstomen.jpg" alt="godzilla" height="350px">
+                        <img src="./IMG/films/godminuz.jpg" alt="godzilla" height="350px">
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <a href="#">Terminos y condiciónes</a>
+            <a href="#">Preguntas frecuentes</a>
+            <a href="#">Ayuda</a>
+            <a href="#" id="administrador">Administrador de películas</a>
+        </div>
+    </footer>
+
+    <script src="api.js"></script>
+</body>
+</html>

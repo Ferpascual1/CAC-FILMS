@@ -1,0 +1,1007 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Nunito Sans", sans-serif;
+    box-sizing: border-box;
+
+}
+
+
+header {
+    background-color: #9f3647;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    margin-top: -70px;
+    z-index: 1;
+    
+}
+/* 
+@media (max-width: 768px) {
+    .header{
+        height: initial;
+        .navegacion{
+            margin-left:10px;
+            margin-right: 10px;
+            flex-direction: column;
+            row-gap: 20px;
+            .anclaLogo{
+                font-size: 1.2rem;
+                font-weight:700;
+            }
+            .listaNav{
+        
+                padding:initial;
+                .listaItem{
+                    .linkNav{
+                        font-weight: 400;
+                        margin-right: initial;
+                        font-size: 1rem;
+                        padding: 0.2rem;
+                        
+                    }
+                
+                }
+            }
+        }
+    }
+} */
+
+
+.div1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    flex-shrink: 0;
+
+}
+
+.div1 a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(23, 23, 23);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #9f3647; 
+}
+
+
+
+.div1:hover{
+    animation: tilt-n-move-shaking 0.25s infinite;
+}
+
+@keyframes tilt-n-move-shaking {
+    0% { transform: rotateZ(-10deg); }
+
+    50% { transform: rotateZ(10deg); }
+
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    height: max-content;
+    width: max-content;
+    margin-right: 60px;
+    
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: 1px solid transparent;
+
+    
+}
+
+/* .warning{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: red;
+    padding-top: 20px;
+} */
+
+ul li a:hover{
+    
+    border-radius: 4px;
+    color: #9f3647;
+    transition: .5s;
+    background-color: transparent;
+    color: white;
+    border: 1px transparent black;
+    box-shadow: 2px 3px 10px black;
+    
+    
+}
+
+.inicsesion {
+    background-color: black;
+    font-size: 1.3rem;
+    border-radius: 4px;
+    color: #9f3647;
+    
+    
+}
+
+.inicsesion:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid black;
+    
+    
+    
+}
+
+.inicsesion:active{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: .2s;
+    
+    
+}
+
+ul li a:active{
+    background-color: white;
+    color: black;
+    
+    transition: .2s;
+    
+}
+
+.inicsesion{
+    margin: 0 0 0 40px;
+}
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 70px;
+    background-color: #181419;
+    color: white;
+    width: 100%;
+    overflow: hidden;
+    }
+
+article #primerdiv {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(./IMG/films/hombre-viendo-netflix.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(57, 57, 57);
+    background-blend-mode: soft-light;
+    width: 100vw;
+    height: 700px;
+    padding-top: 00px;
+    clip-path: inset(0px 0px 100px 0px);
+
+    animation-name: scale;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    
+    
+}
+
+@keyframes scale {
+    0% {opacity: 0%;  scale: 0%;}
+
+    100% {opacity: 100%; scale: 100%;}
+}
+
+
+#primerdiv H1 {
+    font-size: 4rem;
+}
+
+#primerdiv H2 {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+#primerdiv button {
+    background-color: #9f3647;
+    padding: 15px 30px;
+    margin-top: 40px;
+    font-size: 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    border: none;
+    
+}
+
+#primerdiv button a{
+    text-decoration: none;
+    color: white;
+}
+
+#primerdiv button:hover {
+    background-color: rgb(213, 213, 213);
+    color: #9f3647;
+    
+    padding: 15px 30px;
+    transition: .4s;
+    box-shadow: 2px 3px 50px white;
+
+}
+
+#primerdiv button:hover a{
+    
+    color: #9f3647;
+    transition: .4s;
+    
+
+
+}
+
+.segundodiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -70;
+
+
+}
+
+.tercerdiv {
+    display: flex;
+    justify-content: center;
+}
+
+.segundodiv h1 {
+    font-size: 2.7rem;
+    margin-bottom: 30px;
+}
+
+
+@media screen and (max-width: 768px){
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width:max-content;
+        box-sizing: content-box;
+    }   
+    
+    header .div1 span{
+        position: absolute;
+        flex-direction: column;
+        font-size: 1rem;
+        left: 10vh;
+        top: 2vh;
+    }
+
+    header .div1 a img{
+        
+        top: 1vh;
+        right: 20vh;
+    }
+
+    #primerdiv {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: auto;
+        width: 4vh;
+    }
+
+    #primerdiv h1 {
+        font-size: 2rem;
+        width: auto;
+    }
+
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        
+        
+    }
+    
+    ul li a{
+     
+        font-size: .7rem;
+        padding: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        
+    
+        
+    }
+
+    
+    .inicsesion {
+        
+        font-size: .7rem;
+        margin: 0;
+       
+        
+        
+    }
+    
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 70px;
+        background-color: #181419;
+        color: white;
+        width: 100%;
+        overflow: hidden;
+        }
+    
+    article #primerdiv {
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        width: 100vw;
+        
+        
+        
+        
+    }
+  
+    #primerdiv H1 {
+        font-size: 4rem;
+    }
+    
+    #primerdiv H2 {
+        font-weight: 500;
+        font-size: 2rem;
+    }
+    
+    #primerdiv button {
+        background-color: #9f3647;
+        padding: 15px 30px;
+        margin-top: 40px;
+        font-size: 20px;
+        border-radius: 6px;
+        font-weight: bold;
+        border: none;
+        
+    }
+    
+    #primerdiv button a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    #primerdiv button:hover {
+        background-color: rgb(213, 213, 213);
+        color: #9f3647;
+        
+        padding: 15px 30px;
+        transition: .4s;
+        box-shadow: 2px 3px 50px white;
+    
+    }
+    
+    #primerdiv button:hover a{
+        
+        color: #9f3647;
+        transition: .4s;
+        
+     
+    
+    }
+    
+    .segundodiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: -70;
+    
+    
+    }
+    
+    .tercerdiv {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .segundodiv h1 {
+        font-size: 2.7rem;
+        margin-bottom: 30px;
+    }
+    
+}
+
+
+
+#sectionuno {
+    margin-bottom: 0px;
+    margin-top: -80px;
+    padding: 0 200px 60px 200px;
+    
+    animation-name: trasladar;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    transform: translateY();
+    
+}
+
+@keyframes trasladar {
+ from {
+    transform: translateY(100px); opacity: 0%;
+ }
+ to { 
+    transform: translateY(0px); opacity: 100%;
+ }
+}
+
+/* .tercerdiv input {
+    font-size: 20PX;
+    width: 500px;
+    height: 40px;
+    border-radius: 25px;
+    padding: 27PX;
+    outline: none ;
+    
+} */
+
+.tercerdiv button {
+    padding: 15px 20px;
+    border-radius: 25px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    
+    background-color: #9f3647;
+    color: white;
+    border: 2px solid white;
+    margin-left: 19px;
+
+}
+
+.tercerdiv #buscar {
+    border-radius: 20px;
+    width: 340px;
+    font-size: 20px;
+   
+}
+
+
+
+
+.sectionpeliculas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: subir;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-in-out;
+    border-top: 2px solid #9f3647;
+    margin: 0 300px;
+    
+}
+
+@keyframes subir {
+    from {
+        transform: translateY(100%); opacity: 0%;
+    }
+    to {
+        transform: translateY(0%); opacity: 100%;
+    }
+} 
+
+.sectionpeliculas::before{
+    border-top: 2px solid #9f3647;
+    width: 50%;
+}
+
+
+
+#tendencias .peliculasparte1 h1 {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+#tendencias .peliculasparte1  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    
+}
+
+#peliculas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 40%;
+    
+}
+
+
+#peliculas img {
+        border-radius: 10px;
+        margin: 40px 30px;
+        width: 200px;
+        height: auto;
+        
+}
+
+
+#peliculas .divpelis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-in-out;
+    
+}
+
+
+
+/* #peliculas .divpelis .colpeligodzilla{
+    transition: .4s;
+    filter: drop-shadow(5px 3px 8px #9f3647);
+    transform: scale(0.9);
+    
+}
+ */
+
+#peliculas .divpelis .titulopelicula{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 1.5rem;
+    
+    height: 360px;
+    width: 260px;
+    opacity: 0;
+ }
+
+ 
+#peliculas .divpelis:hover {
+    transition: .5s;
+    transform: scale(0.9);
+    filter: drop-shadow(5px 3px 8px #9f3647);
+    
+    
+}
+
+#peliculas .divpelis:hover .titulopelicula{
+    transition: .5s;
+    backdrop-filter: blur(8px);
+
+    opacity: 1;
+}
+
+
+
+/* #peliculas .divpelis .after{
+    transition: .4s;
+    filter: drop-shadow(5px 3px 8px #9f3647);
+    transform: scale(0.9);
+    
+} */
+
+
+
+/* #peliculas .divpelis .titulopelicula h4{
+
+    position: absolute;
+    left: 340px;
+    z-index: 3;
+    opacity: 1;
+    height: 300px;
+    width: 300px;
+    background-color: red;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    
+    
+    
+}
+ */
+/* #peliculas .divpelis:hover h4 {
+    position: absolute;
+    left: 340px;
+    z-index: 3;
+    opacity: 1;
+    }
+ */
+
+/* .peliculas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 10px 130px 0px;
+    border-top: 2px solid #9f3647;
+     */
+/*     animation: subir;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes subir {
+    from {
+        transform: translateY(100%); opacity: 0%;
+    }
+    to {
+        transform: translateY(0%); opacity: 100%;
+    }
+} */
+/* 
+.peliculas img {
+    border-radius: 10px;
+    margin: 40px 30px;
+    width: 200px;
+    height: auto;
+    
+}
+ */
+
+ .btn{
+    background-color: #9f3647;
+    padding: 13px 13px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.1rem;
+    margin: 0px 10px;
+    font-weight: 400;
+    text-decoration: none;
+    overflow: hidden;
+    outline: none;
+}
+
+/* .botonsig{
+    background-color: #9f3647;
+    padding: 13px 13px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.1rem;
+    margin: 0px 10px;
+    font-weight: 400;
+    
+    text-decoration: none;
+    overflow: hidden;
+    outline: none;
+} */
+
+/* .botonant a{
+    background-color: #9f3647;
+    padding: 13px 13px;
+    border: hidden;
+    border-radius: 5px;
+    color: white;
+    
+    font-size: 1.1rem;
+    margin: 0px 10px;
+    font-weight: 400;
+    text-decoration: none;
+    outline: #9f3647;
+}
+
+.botonsig a{
+    background-color: #9f3647;
+    padding: 13px 13px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    border: hidden;
+    font-size: 1.1rem;
+    margin: 0px 10px;
+    font-weight: 400;
+    text-decoration: none;
+    outline: none;
+}
+
+.botonant:hover {
+    transition: .4s;
+    transform: scale(0.9);
+}
+
+.botonsig:hover {
+    transition: .4s;
+    transform: scale(0.9);
+} */
+
+.paginacion button{
+    background-color: #9f3647;
+    padding: 13px 13px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.1rem;
+    margin: 0px 10px;
+    font-weight: 400;
+    text-decoration: none;
+    overflow: hidden;
+    outline: none;
+}
+
+
+
+.botonant a{
+    background-color: #9f3647;
+    padding: 13px 13px;
+    border: hidden;
+    border-radius: 5px;
+    color: white;
+    
+    font-size: 1.1rem;
+    margin: 0px 10px;
+    font-weight: 400;
+    text-decoration: none;
+    outline: #9f3647;
+}
+
+.botonsig a{
+    background-color: #9f3647;
+    padding: 13px 13px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    border: hidden;
+    font-size: 1.1rem;
+    margin: 0px 10px;
+    font-weight: 400;
+    text-decoration: none;
+    outline: none;
+}
+
+.paginacion button:hover{
+    transition: .4s;
+    transform: scale(0.9);
+    background-color: white;
+    color: #9f3647;
+}
+
+
+
+.paginacion {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #9f3647;
+    width: 80%;
+    padding-bottom: 60px;
+
+}
+
+
+
+
+.aclamadas h1 {
+    display: flex;
+    justify-content: center;
+}
+
+
+.footer {
+    background-color: #9f3647;
+    padding: 30px 0 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.footer a{
+    
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0 10px 0 10px;
+    }
+
+.footer #administrador {
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.pelisaclamadas {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 45%;
+    overflow-x: scroll;
+    margin-bottom: 50px;
+    
+}
+
+.aclamadas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aclamadas h1{
+    font-size: 2.5rem;
+    margin: 20px 400px 0 400px;
+    
+}
+
+.pelisaclamadas img{
+    margin: 40px 20px 40px 20px;
+    border-radius: 10px;
+    height: 250px;
+    width: auto;
+    
+    
+    
+    
+    
+}
+
+
+.prueba{ 
+    font-size: 5rem;
+    margin-left: 200px;
+    
+}
+
+.flechaArriba{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+/* .peliculas .h3god  {
+    position: absolute;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    top: 950px;
+    left: 248px;
+    transition-delay: 0.1s;
+    transition-duration: 0.5s;
+    visibility: visible;
+    background-color: red;
+    padding: 180px 70px;
+    opacity: 0.3;
+    
+
+    
+}
+ */
+/* .peligodzilla:hover{
+    transform: scale(90%);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    box-shadow: 0 0 30px #9f3647;
+    filter: blur(5px);
+    visibility: visible;
+    opacity: 1; 
+    
+}
+ */
+
+
+/* .peligodzilla:hover .h3god {
+    transition-duration: 0.5s;
+    opacity: 1;
+    scale: 1;
+     */
+    
+
+
+/* .peliculas  .pandemic  {
+    position: absolute;
+    opacity: 0;
+    top: 1150px;
+    left: 400px;
+    transition-delay: 0.1s;
+    transition-duration: 0.5s;
+}
+ */
+/* .peliculas:hover .pandemic{
+    opacity: 1;
+}
+ */
+
+ .contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	width: 90%;
+	max-width: 1000px;
+	margin: 40px auto 100px auto;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
+}
+
+.contenedor .pelicula {
+	text-align: center;
+}
+
+.contenedor .pelicula .titulo {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.contenedor .pelicula .poster {
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 15px;
+}
+/* 
+.paginacion {
+	position: fixed;
+	bottom: 0;
+	background: #100a1f;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 10px;
+}
+
+.paginacion button {
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: #241744;
+	color: #fff;
+	border-radius: 100px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	transition: .3s ease all;
+}
+
+.paginacion button:hover {
+	background: #137c32;
+} */
+

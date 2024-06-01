@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito Sans", sans-serif;
+  
+
+}
+
+body {
+   
+    background-image: url(./IMG/fondo\ login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 0 0 200px;
+    color: white;
+    font-weight: bold;
+    gap: 10px;
+    font-size: 1.3rem;
+}
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.planilla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2a2a2a;
+    margin-top: 10px;
+    height: 620px;
+    width: 450px;
+    border-radius: 3px;
+    box-shadow: 0 5px 100px rgba(255, 255, 255, 20);
+}
+
+.planilla h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#input, #nombre, #apellido, #email, #password  {
+    background-color: transparent;
+    border: 2px solid #9f3647;
+    border-radius: 20px;
+    margin: 10px 0px;
+    padding: 5px 10px;
+    width: 350px;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+#pais { 
+    background-color: transparent;
+    border: 2px solid #9f3647;
+    border-radius: 20px;
+    margin: 10px 0px;
+    padding: 5px 40px 5px 10px;
+    width: 100%;
+    font-size: 1.2rem;
+    color: white;
+}
+
+#pais:hover {
+    background-color: #2a2a2a;
+}
+
+
+
+.acepto .aceptocheck {
+    color: white;
+    font-size: 0.8rem;
+}
+
+
+
+form .button {
+    display: flex;
+    justify-content: center;
+}
+
+form .button #botonregister {
+    background-color: #9f3647;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+    margin: 15px 0px;
+}
+
+.warning{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: red;
+    padding-top: 10px;
+}
+
+.ayuda #a {
+    text-decoration: none;
+}
+
+h5 {
+    color: #787878;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+#fechaNacimiento {
+    background-color: transparent;
+    border: 2px solid #9f3647;
+    border-radius: 20px;
+    margin: 10px 0px;
+    padding: 5px 10px;
+    width: 350px;
+    font-size: 1.2rem;
+    color: white;
+}
